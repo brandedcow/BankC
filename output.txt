@@ -1,0 +1,76 @@
+db2inst1@db2server_4b8bc5:~$ ./p2 db.properties
+:: TEST - CONNECTING TO DATABASE
+:: TEST - SUCCESSFULLY CONNECTED TO DATABASE
+:: TEST - DISCONNECTED FROM DATABASE
+
+
+:: CREATE NEW CUSTOMER #100 - SUCCESS
+
+
+:: CREATE NEW CUSTOMER #101 - SUCCESS
+
+
+:: CREATE NEW CUSTOMER #102 - SUCCESS
+
+
+:: OPEN ACCOUNT #1000 - SUCCESS
+
+
+
+:: OPEN ACCOUNT #1001 - SUCCESS
+
+
+
+:: OPEN ACCOUNT #1002 - SUCCESS
+
+
+
+:: OPEN ACCOUNT #1003 - SUCCESS
+
+
+
+:: ACCOUNT SUMMARY FOR CUSTOMER #101 - SUCCESS
+NUMBER BALANCE
+1002   25
+
+
+:: REPORT A - SUCCESS
+ID    NAME         AGE  GENDER BALANCE
+100   Ash          10   M      110
+101   Pikachu      25   M      25
+102   Misty        18   F      500
+
+
+:: DEPOSIT INTO ACCOUNT #1000 - SUCCESS
+
+
+
+:: WITHDRAW FROM ACCOUNT #1001 - SUCCESS
+
+
+
+:: TRANSFER FROM ACCOUNT #1001 TO ACCOUNT #1000 - SUCCESS
+
+
+
+:: CLOSE ACCOUNT #1001 - SUCCESS
+
+
+
+
+
+:: REPORT A - SUCCESS
+ID    NAME         AGE  GENDER BALANCE
+100   Ash          10   M      310
+101   Pikachu      25   M      25
+102   Misty        18   F      500
+
+
+:: REPORT B - SUCCESS
+Average Total Balance for Age 18 to 35: 262
+
+Main Menu
+1. New Customer
+2. Customer Login
+3. Exit
+Enter Option Number:
